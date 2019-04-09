@@ -6,8 +6,8 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Summary title="땅콩버터와 젤리"
-        ingredients={['땅콩','젤리','냐미']}
-        steps={['땅콩버터와 젤리를 넓게 바른 식방을.. 죽빵', '냠냠이ㄴㄹ']}/>,
+        ingredients={3}
+        steps={2}/>,
     document.getElementById('root')
 );
 
