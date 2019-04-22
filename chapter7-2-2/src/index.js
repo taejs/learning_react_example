@@ -24,7 +24,7 @@ const historicDatesForSkiing = [{
 },{
   year:1936,
   event : '스쿼벨리, 매드리버 글렌 개장'
-}]
+}];
 
 ReactDOM.render(<Timeline name="스키의 여사" data={historicDatesForSkiing} />, document.getElementById('root'));
 
