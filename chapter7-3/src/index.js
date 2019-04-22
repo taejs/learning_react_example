@@ -2,9 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import PeopleList from './PeopleList';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const RandomUsers = DataComponent(
+    PeopleList,
+    'https://randomuser.me/api'
+)
+
+ReactDOM.render(<RandomUsers count={10} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
