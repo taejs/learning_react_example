@@ -21,3 +21,5 @@ const Expandable = ComposedComponent =>
                     {...this.props} />
         }
     }
+
+    export default Expandable;
