@@ -33,6 +33,7 @@ const initialState = {
 
 const store =createStore(combineReducers({colors, sort}), (localStorage['redux-store'] ? JSON.parse(localStorage['redux-store']):'')); //localStorage에 값이 있으면 
 
+store.subscribe(()=> localStorage['redux-store'] = JSON.stringify(store.getState));
 //store.subscribe(()=>console.log('색 개수: ', store.getState().colors.length ));
 const logState = ()=>console.log('다음 상태 :', store.getState());
 store.subscribe(logState); //함수리스너 등록
