@@ -9,8 +9,8 @@ class AddColorForm extends Component {
     }
 
     submit(e) {
-        const {_title, _color} = this.refs;
         e.preventDefault();
+        const {_title, _color} = this;
         this.props.store.dispatch(addColor(_title.value, _color.value));
         _title.value = '';
         _color.value = '';
@@ -20,8 +20,8 @@ class AddColorForm extends Component {
     render() {
         return (
             <form onSubmit={this.submit}>
-                <input ref={input => _title = input} type="text" placeholder="색 이름" required />
-                <input ref={input => _color = input} type="color" required/>
+                <input ref={input => this._title = input} type="text" placeholder="색 이름" required />
+                <input ref={input => this._color = input} type="color" required/>
                 <button>추가</button>
             </form>
         );

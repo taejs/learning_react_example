@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {createStore, combineReducers, applyMiddleware} from 'redux'
+import {colors, sort} from './reducers'
 import * as serviceWorker from './serviceWorker';
 
-const colors = {
+const stateData = {
     'colors' : [
         {
             'id' : 'ieijfd3-34837fdn',
@@ -26,6 +28,22 @@ const colors = {
         }
     ]
 };
+
+
+const logger = store => next => action => {
+    let result;
+    console.groupCollapsed('디스패칭', action.type);
+    console.log('이전 상태', store.getState());
+    result = next(action);
+    console.log('다음 상태', store.getState());
+    console.groupEnd();
+}
+
+const saver = store => next => action => {
+    let result = next(action);
+    localStorage['redux-store'] = JSON.stringify(store.getState());
+    return result;
+}
 
 
 const storeFactory = (initialState=stateData) =>
