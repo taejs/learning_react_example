@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { rateColor, removeColor } from './actions';
-import {sortFunction} from 'lib/array-helpers';
 import * as serviceWorker from './serviceWorker';
 
 const colors = {
