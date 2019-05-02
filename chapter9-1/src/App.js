@@ -27,6 +27,20 @@ const ColorList = ({store}) => {
 
 
 class App extends Component {
+    getChildContext() {
+        return {
+            store : this.props.store
+        }
+    }
+
+    componentWillMount() {
+        this.unsubscribe = store.subscribe(()=>this.forceUpdate())
+    }
+
+    componentWillUnmount() {
+        this.unsubscribe();
+    }
+
     constructor(props) {
         super(props)
         this.state = {
@@ -81,5 +95,9 @@ class App extends Component {
         this.setState({colors})
     }
 
+}
+
+App.childContextTypes = {
+    store : PropTypes.object.isRequired
 }
 export default App;
