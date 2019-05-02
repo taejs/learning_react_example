@@ -9,7 +9,7 @@ import { rateColor, removeColor } from './actions';
 import { sortFunction } from './lib/array-helpers';
 
 
-const ColorList = ({store}) => {
+const ColorList = (props,{store}) => {
     const {colors, sort} = store.getState();
     const sortedColors = [...colors].sort(sortFunction(sort));
     return (<div className="color-list">
@@ -25,6 +25,10 @@ const ColorList = ({store}) => {
     </div>)
 }
 
+ColorList.contextTypes = {
+    store : PropTypes.object
+}
+
 
 class App extends Component {
     getChildContext() {
@@ -34,7 +38,7 @@ class App extends Component {
     }
 
     componentWillMount() {
-        this.unsubscribe = store.subscribe(()=>this.forceUpdate())
+        this.unsubscribe = this.props.store.subscribe(()=>this.forceUpdate())
     }
 
     componentWillUnmount() {
@@ -46,54 +50,18 @@ class App extends Component {
         this.state = {
             colors : []
         }
-        
-        this.addColor = this.addColor.bind(this);
-        this.rateColor = this.rateColor.bind(this);
-        this.removeColor = this.removeColor.bind(this);
+    
     }
     render() {
-        const { addColor, rateColor, removeColor } = this;
         const { colors } = this.state;
         return (
             <div className="app">
-                <SortMenu store={store}/>
-                <AddColorForm store={store} />
-                <ColorList store={store} />
+                <SortMenu />
+                <AddColorForm />
+                <ColorList  />
             </div>
         )
     }
-
-    addColor(title, color) {
-        const colors = [
-            ...this.state.colors,
-            {
-                id : v4(),
-                title,
-                color, 
-                rating :0
-            }
-        ]
-        this.setState({colors});
-    }
-
-    rateColor(id, rating) {
-        const colors = this.state.colors.map(color =>
-            (color.id !== id) ?
-                color : {
-                    ...color,
-                    rating
-                }
-            )
-            this.setState({colors});
-    }
-
-    removeColor(id) {
-        const colors = this.state.colors.filter(
-            color => color.id !== id
-        )
-        this.setState({colors})
-    }
-
 }
 
 App.childContextTypes = {
