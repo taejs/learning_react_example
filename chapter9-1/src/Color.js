@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import StarRating from './StarRating';
 import './Color.css';
 
+import { rateColor, removeColor } from './actions';
+
 class Color extends Component {
     constructor(props){
         super(props);
