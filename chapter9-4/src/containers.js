@@ -9,15 +9,24 @@ import ColorList from './App';
 import { rateColor, removeColor, addColor, sortColors } from './actions';
 import { sortFunction } from './lib/array-helpers';
 
-export const NewColor = (props, {store}) =>
-    <AddColorForm onNewColor={(title, color) => store.dispatch(addColor(title, color))} />
+export const NewColor = connect(
+    null,
+    dispatch => 
+    ({
+        onNewColor(title, color) {
+            dispatch(addColor(title, color));
+        }
+    })(AddColorForm)
+)
 
-NewColor.contextTypes = {
-    store : PropTypes.object
-}
-export const Menu = (props, {store}) =>
-    <SortMenu sort={store.getState().sort} onSelect={sortBy => store.dispatch(sortColors(sortBy))} />
-
+export const Menu = connect(
+    null,
+    ({
+        onSelect(sortBy) {
+            dispatch(sortColors(sortBy))
+        }
+    })(sortMenu)
+)
 Menu.contextTypes = {
     store : PropTypes.object
 }
