@@ -20,16 +20,16 @@ export const NewColor = connect(
 )
 
 export const Menu = connect(
-    null,
+    state => ({
+        sort : state.sort
+    }),
     ({
         onSelect(sortBy) {
             dispatch(sortColors(sortBy))
         }
     })(sortMenu)
 )
-Menu.contextTypes = {
-    store : PropTypes.object
-}
+
 // export const Colors = (props, {store}) =>{
 //     const {colors, sort} = store.getState();
 //     const sortedColors = [...colors].sort(sortFunction(sort));
