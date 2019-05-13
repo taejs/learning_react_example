@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {MainMenu, AboutMenu} from './mainmenu';
+import {MainMenu} from './mainmenu';
 import {
     HashRouter,
     BrowserRouter,
     Route,
-    Link,
-    Redirect,
-    Switch
+    Link
 } from 'react-router-dom'
-import {Home, About, Events, Products, Contacts, Company, History} from './pages'
+import {Home, About, Events, Products, Contacts} from './pages'
 
 
 
@@ -21,14 +19,9 @@ import {Home, About, Events, Products, Contacts, Company, History} from './pages
 ReactDOM.render(
     <HashRouter>
     <div class="main">
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/events" component={Events} />
-            <Route path="/contacts" component={Contacts} />
-            <Route path="/about" component={About} />
-            <Redirect from="/history" to="/about/history" />
-
-        </Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/events" component={Events} />
+        <Route path="/contacts" component={Contacts} />
     </div>
     </HashRouter>
     , document.getElementById('root'));

@@ -1,6 +1,8 @@
 
 import React from 'react'
-import {MainMenu} from './mainmenu'
+import {MainMenu, AboutMenu} from './mainmenu'
+import {Route} from 'react-router-dom'
+
 const PageTemplate = ({children}) =>
     <div className="page">
         <MainMenu />
@@ -33,3 +35,30 @@ export const Home = () =>
         <h1>홈페이지</h1>
     </section>
 </PageTemplate>
+
+export const About = ({match}) =>
+<PageTemplate>
+    <section className="about">
+        <Route component={AboutMenu} />
+        <Route exact path="/about" component={Company}/>
+        <Route path="/about/history" component={History}/> 
+    </section>
+</PageTemplate>
+
+export const History = () =>
+    <section className="history">
+        <h2>연혁</h2>
+        <p>거친것은 </p>
+    </section>
+
+export const Company = () =>
+    <section className="company">
+        <h2>회사소개</h2>
+        <p>거친것은 </p>
+    </section>
+
+export const Service = () =>
+    <section className="services">
+        <h2>회사소개</h2>
+        <p>거친것은 </p>
+    </section>
