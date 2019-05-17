@@ -55,14 +55,13 @@ const storeFactory = (initialState=stateData) =>
         (localStorage['redux-store']) ? JSON.parse(localStorage['redux-store']) : initialState
     )
 
-const render = ()=> ReactDOM.render(
+const render = ()=> {ReactDOM.render(
     <Provider store={store}>
         <HashRouter>
         <App/>
         </HashRouter>
     </Provider>,
-
-document.getElementById('root'));
+document.getElementById('root'))};
 const store= storeFactory();
 
 render();

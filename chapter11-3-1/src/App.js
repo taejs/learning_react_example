@@ -7,7 +7,7 @@ import SortMenu from './sortMenu';
 import Color from './Color';
 import { rateColor, removeColor } from './actions';
 import { sortFunction } from './lib/array-helpers';
-import {Menu, NewColor, Colors} from './containers'
+import {Menu, NewColor, Colors, ColorList} from './containers'
 import {findById} from './functions'
 import {connect} from 'react-redux';
 import {Switch, Route} from 'react-router-dom'
@@ -24,35 +24,16 @@ const ColorWrapper = connect(
 )(ColorDetails)
 
 
-const ColorList = (props,{store}) => {
-    const {colors, sort} = store.getState();
-    const sortedColors = [...colors].sort(sortFunction(sort));
-    return (<div className="color-list">
-    {(colors.length === 0) ?
-        <p>색이 없습니다. 색을 추가해주세요</p> :
-        sortedColors.map(color =>
-        <Color key={color.id}
-            {...color}
-            onRate={(rating)=> store.dispatch(rateColor(color.id, rating))}
-            onRemove={()=> store.dispatch(removeColor(color.id)) }/>
-        )    
-    }
-    </div>)
-}
-
-ColorList.contextTypes = {
-    store : PropTypes.object
-}
-
 
 const App = () => 
     <Switch>
-        <Route exact path="/:id" Component={Color} />
-        <Route path="/" Component={() => 
+        <Route exact path="/:id" component={Color} />
+        <Route path="/" component={() => 
         <div className="app">
             <Menu />
             <NewColor />
             <Colors />
-        </div>}/>
+        </div>} />
+        <Route component={() => <div>wohops</div>} />
     </Switch>
 export default App;
