@@ -1,0 +1,26 @@
+.episode-layout {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100vh;
+}
+
+.episode-box {
+  padding: 0.5rem;
+}
+
+.header {
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  position: sticky;
+  top: 0;
+}
+.header * {
+  margin: 0;
+}
+body{
+  font-size: 10px;
+}
