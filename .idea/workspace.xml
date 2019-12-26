@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c91a629b-9bb1-481d-93cb-3693a93c6972" name="Default Changelist" comment="">
+    <list default="true" id="c91a629b-9bb1-481d-93cb-3693a93c6972" name="Default Changelist" comment="rn-weather done">
+      <change afterPath="$PROJECT_DIR$/redux-saga-beginner-tutorial/src/components/Counter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux-saga-beginner-tutorial/src/reducers/reducers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux-saga-beginner-tutorial/src/sagas/saga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redux-saga-beginner-tutorial/src/test/saga.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rn-weather/Weather.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn-weather/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/rn-weather/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn-weather/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/rn-weather/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn-weather/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/rn-weather/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn-weather/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rn-weather/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn-weather/yarn-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn-weather/yarn.lock" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter11/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter11-1/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter11-2/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter11-2-2/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter11-3/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter11-3-1/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter7-2-2/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter7-3/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter7-3-1/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter7-5/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter8/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter8-1/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter9/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter9-1/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter9-3/node_modules/" />
-    <ignored path="$PROJECT_DIR$/chapter9-4/node_modules/" />
-    <ignored path="$PROJECT_DIR$/no-redux/node_modules/" />
-    <ignored path="$PROJECT_DIR$/react-redux-tutorial/node_modules/" />
-    <ignored path="$PROJECT_DIR$/redux-tutorial/node_modules/" />
-    <ignored path="$PROJECT_DIR$/typescript-todolist/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,84 +25,24 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/no-redux/src/store.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
-    <option name="y" value="-10" />
-    <option name="width" value="1750" />
-    <option name="height" value="1000" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="learning_react_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning_react_example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning_react_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning_react_example" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning_react_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning_react_example" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="inspectionProfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning_react_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning_react_example" type="462c0819:PsiDirectoryNode" />
-              <item name="no-redux" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learning_react_example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learning_react_example" type="462c0819:PsiDirectoryNode" />
-              <item name="no-redux" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectId" id="1VV7WooCg4sWv6vOvI2uf2fmizL" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/armeria" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -143,44 +74,6 @@
     <option name="totallyTimeSpent" value="158000" />
   </component>
   <component name="TodoView" selected-index="1" />
-  <component name="ToolWindowManager">
-    <frame x="12" y="-8" width="1400" height="800" extended-state="0" />
-    <layout>
-      <window_info id="Nl-Palette" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49052134" visible="true" weight="0.2796102" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="8" sideWeight="0.5094787" side_tool="true" visible="true" weight="0.2796102" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5029985" side_tool="true" visible="true" weight="0.34876543" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49925038" weight="0.3287037" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.4970015" visible="true" weight="0.34876543" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.32957748" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49925038" weight="0.3287037" />
-      <window_info anchor="bottom" id="TypeScript" order="10" sideWeight="0.49850076" weight="0.3287037" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="right" id="Properties" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="10" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -190,12 +83,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -215,59 +103,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/no-redux/src/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/no-redux/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/no-redux/src/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/no-redux/src/store.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
